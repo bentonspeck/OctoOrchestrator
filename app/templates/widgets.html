@@ -1,0 +1,7 @@
+{% block printer_status %}
+    <div class="printer_status">
+        {% for p in printers %}
+          <h2>{{p.name}}: {{p.status}}</h2>
+        {% endfor %}
+    </div>
+{% endblock %}

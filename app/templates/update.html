@@ -1,0 +1,23 @@
+<!doctype html>
+
+
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Update page</title>
+  </head>
+
+  <body>
+    <h1>Users</h1>
+    {%for i in range(0, len)%} 
+    <li>{{userlist[i]['name']}}</li> 
+    {%endfor%}
+    <h2>Enter username and password</h2>
+    <form action="#" method="post">
+      {{ form.username()}}
+      {{ form.password()}}
+      <input type="submit"/>
+    </form>
+  </body>
+</html>
